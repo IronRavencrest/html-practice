@@ -1,0 +1,48 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>static</title>
+    <style>
+        .box
+        {
+            width: 500px;
+            height: 500px;
+            border: 2px solid;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+        }
+        .static
+        {
+            width: 50px;
+            height: 50px;
+            border: 2px solid;
+            position: static;
+            top: 150px;
+            right: 100px;
+        }
+    </style>
+</head>
+<p>static — это значение свойства position по умолчанию, иными словами, если вы не задали для элемента position, то оно считается браузером как static.
+</p>
+<ul>
+    <li>элементы на веб-странице выводятся в том порядке, как они описаны в коде HTML;
+    </li>
+    <li>свойства left, right, top и bottom не дают никакого эффекта;
+    </li>
+    <li>свойство z-index не работает.
+    </li>
+</ul>
+
+<body>
+    <div class="box">
+        <div class="static">
+            
+        </div>
+    </div>
+</body>
+</html>

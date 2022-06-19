@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>absolute</title>
+    <style>
+        .box
+        {
+            width: 500px;
+            height: 500px;
+            border: 2px solid;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+        }
+        .absolute
+        {
+            width: 50px;
+            height: 50px;
+            border: 2px solid;
+            position: absolute;
+            top: 150px;
+            right: 200px;
+        }
+    </style>
+</head>
+<body>
+    <p>При абсолютном позиционировании элемент не существует в потоке документа и его положение задаётся относительно краёв браузера. Координаты указываются относительно краёв окна браузера, называемого «видимой областью» или «областью просмотра»</p>
+    <p>Пример работы</p>
+    <p>В коде можно поменять top, right класса .box и посмотреть что будет</p>
+    <div class="box">
+        <div class="absolute">
+
+        </div>
+    </div>
+</body>
+</html>

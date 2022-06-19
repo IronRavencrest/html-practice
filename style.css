@@ -5,10 +5,13 @@
 если веса одинаковые то будет применяться то что ниже (сверху вниз)
 */
 
+/*
+https://jahosiro.github.io/rsschool-cv/
+*/
+
 
 body
 {
-    
     background-color: rgb(120, 128, 136);
     width: auto; /*автоизменение ширины (например для мобилок)*/
     height: auto; /*автоизменение высоты*/
@@ -25,44 +28,40 @@ body
     padding-left: 50px;
 }
 
+
 .spiral
 {
-    transform: translate(-341px, 325px) rotate(270deg); /*переместить элемент по XY и повернуть его*/
+    transform: translate(-412px, 300px) rotate(270deg); /*переместить элемент по XY и повернуть его*/
     /*чтобы он не бегал когда меняешь маштаб страницы*/
     position: absolute;
-    min-width: 100px;
-    min-height: 100px;
-    
+    height: 106px;
 }
 
 .woodfound
 {
     padding: 20px;
-    border: 2px solid;
+    border: 1px solid;
     background-image: url(assets/img/wood.jpg);
     box-shadow: 4px 4px 20px #0c0d0e;
+    border-radius: 20px; /*сглаживание углов*/
 }
 
 .conteiner
 {
     border: 2px solid;
-    max-height: 100%;
     min-height: 700px;  
     padding: 3px;
     padding-left: 25px;
     background: url(https://img.freepik.com/free-photo/white-watercolor-papar-texture-background-cover-card-design-overlay-aon-paint-art-background_1962-2191.jpg?w=2000);
     box-shadow: 1px 1px 20px #0c0d0e;
+    position: relative;
 }
 
 header
 {
     background: chocolate;
-    display: flex; /*чтобы выровнять по горизонтали*/
-    justify-content: left; /*чтобы выделить между элементами пустое место (отступ до макс ширины)*/
-    border-bottom: 1px solid; /*граница*/
-    height: 30px;
-    align-items: flex-end; /*выровнять элементы по низу*/
-
+    display: flex;
+    border-bottom: 1px solid; 
 }
 
 a
@@ -147,8 +146,56 @@ main
 footer
 {
     background: red;
-    position: relative;
-    top: 115px;
-    left: 0px;
+    position: absolute; /*из-за того что родительский элемент (conteiner) с position relative, элемент с absolute будет сидеть внутри родителя, это нужно для того чтобы он стоял только в заданном координате несмотря ни на что*/
+    top: 600px;
+    width: 95.5%;
 }
 
+.section1
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.secbutton
+{
+    /*уверен есть способ получше*/
+    background: url(assets/img/buttonpurple.png); /*картинка*/
+    width: 10%; /*ширину настроить по картинке*/
+    margin-right: 70px;
+    padding: 10px;
+    background-size: cover;
+    transform: scale(1.8); /*изменить размер элемента*/
+    text-align: center;
+    transition: .5s;
+}
+
+.secbutton:hover
+{
+    background: url(assets/img/butttonred.png);
+    transition: .5s;
+    background-size: cover;
+    transform: scale(1);
+}
+
+.avatar
+{
+    width: 120px;
+    transition: .5s; /*плавный выход их hover*/
+    transform: scale(1); 
+}
+
+.avatar:hover
+{
+    transform: scale(1.2); /*плавное изменения размера при наводке*/
+    transition: .5s;
+}
+
+.position
+{
+    display: flex;
+    justify-content: space-around;
+    padding: 5px;
+
+}

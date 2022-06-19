@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fixed</title>
+    <style>
+        .box
+        {
+            width: 500px;
+            height: 1500px;
+            border: 2px solid;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+        }
+        .fixed
+        {
+            width: 50px;
+            height: 50px;
+            border: 2px solid;
+            position: fixed;
+            top: 180px;
+            right: 500px;
+        }
+    </style>
+</head>
+<body>
+    <p>Похоже на абсолютное позиционирование. Но в отличие от него привязывается к указанной свойствами left, top, right и bottom точке на экране и не меняет своего положения при прокрутке веб-страницы.</p>
+    <p>Применяется такой тип позиционирования для создания меню, вкладок, заголовков, в общем, любых элементов, которые должны быть закреплены на веб-странице и всегда видны посетителю. </p>
+    <p>Пример работы</p>
+    <p>В коде можно поменять top, right класса .box и посмотреть что будет</p>
+    <div class="box">
+        <div class="fixed">
+
+        </div>
+    </div>
+</body>
+</html>

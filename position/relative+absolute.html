@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>relative+absolute</title>
+</head>
+<style>
+    .relative
+    {
+        width: 500px;
+        height: 500px;
+        border: 2px solid;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        position: relative;
+    }
+
+    .absolute
+    {
+        width: 50px;
+        height: 50px;
+        border: 2px solid;
+        position: absolute;
+        top: 150px;
+        right: 100px;
+    }
+</style>
+<body>
+    <p>Если для родительского элемента задать relative, а для дочернего absolute, то произойдёт смена системы координат и положение дочернего элемента при этом указывается относительно его родителя</p>
+    <p>Пример работы</p>
+    <p>В коде можно поменять top, right класса .box и посмотреть что будет</p>
+    <div class="relative">
+        <div class="absolute">
+            
+        </div>
+    </div>
+</body>
+</html>

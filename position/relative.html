@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>relative</title>
+</head>
+<style>
+    .box
+    {
+        width: 500px;
+        height: 500px;
+        border: 2px solid;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+    }
+
+    .relative
+    {
+        width: 50px;
+        height: 50px;
+        border: 2px solid;
+        position: relative;
+        top: 150px;
+        right: 100px;
+    }
+</style>
+<body>
+    <p>Положение элемента устанавливается относительно его исходного места. Добавление свойств left, top, right и bottom изменяет позицию элемента и сдвигает его в ту или иную сторону от первоначального расположения.</p>
+    <p>
+        Положительное значение right определяет сдвиг влево от правой границы элемента, отрицательное — сдвиг вправо. Положительное значение top задаёт сдвиг элемента вниз 
+    </p>
+    <p>Пример работы</p>
+    <p>В коде можно поменять top, right класса .box и посмотреть что будет</p>
+    <div class="box">
+        <div class="relative">
+
+        </div>
+    </div>
+</body>
+</html>
